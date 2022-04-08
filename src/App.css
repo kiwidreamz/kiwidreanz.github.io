@@ -1,38 +1,175 @@
 .App {
-  text-align: center;
+	text-align: center;
+	background-color: #000c17;
+
+	background-image: url(./icons/background6.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+
+	opacity: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.layout {
+	background-color: #000c17;
+	min-height: 133vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+
+	background-image: url(./icons/background2.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+
+	opacity: 1;
+}
+
+.links {
+	display: inline;
+	margin-top: 18rem;
+}
+
+.rotation {
+	display: inline-flex;
+	height: 11vmin;
+	margin-left: 100px;
+	margin-right: 100px;
+	filter: invert(95%) sepia(7%) saturate(1584%) hue-rotate(160deg) brightness(97%) contrast(92%);
+}
+.rotation:hover {
+	filter: invert(38%) sepia(95%) saturate(589%) hue-rotate(317deg) brightness(81%) contrast(84%);
+}
+
+.scroll {
+	height: 10vmin;
+	filter: invert(95%) sepia(7%) saturate(1584%) hue-rotate(160deg) brightness(97%) contrast(92%);
+	margin-left: 111rem;
+	margin-bottom: 33px;
+}
+
+#cvdownloadbutton {
+	margin-top: 8rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.rotation:hover {
+		animation: rotation infinite 33s linear;
+	}
+	.scroll {
+		animation: rotation2 infinite 0.8s linear;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes rotation2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
 }
 
-.App-link {
-  color: #61dafb;
+.icon_link {
+	color: #61dafb;
+	margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	top: 33%;
+	transform: translate(-50%, -50%);
+	display: block;
+	color: #8c4552;
+	font-size: 100px;
+	font-weight: bolder;
+	letter-spacing: 8px;
+	cursor: pointer;
+}
+
+span::before {
+	content: "STEPHANE POPOV";
+	position: absolute;
+	color: transparent;
+	background-image: repeating-linear-gradient(
+		45deg,
+		transparent 0,
+		transparent 2px,
+		#3b6069 2px,
+		#3b6069 4px
+	);
+	background-clip: text;
+	top: 0px;
+	left: 0;
+	z-index: -1;
+	transition: 1s;
+}
+
+span::after {
+	content: "STEPHANE POPOV";
+	position: absolute;
+	color: transparent;
+	background-image: repeating-linear-gradient(
+		135deg,
+		transparent 0,
+		transparent 2px,
+		#bfe4ed 2px,
+		#bfe4ed 4px
+	);
+	background-clip: text;
+	top: 0px;
+	left: 0px;
+	transition: 1s;
+}
+
+span:hover:before {
+	top: 10px;
+	left: 10px;
+}
+
+span:hover:after {
+	top: -10px;
+	left: -10px;
+}
+
+.projects {
+	min-height: 169vh;
+}
+
+#project_title {
+	width: 50%;
+	margin-bottom: 100px;
+}
+
+.card {
+	width: 29rem;
+	height: 28rem;
+	margin: 69px;
+	margin-top: 150px;
+}
+
+.card-deck {
+	display: inline-block;
+}
+
+#buttons {
+	margin-left: 20px;
 }
