@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.be3826d3.css",
+    "main.js": "/static/js/main.ad1abfe8.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/background6.jpg": "/static/media/background6.e799dae842279c9bbb0a.jpg",
+    "static/media/background2.jpg": "/static/media/background2.4416161da2498fe1b8c1.jpg",
+    "static/media/algoviz.jpg": "/static/media/algoviz.529e815fb05ea8d74769.jpg",
+    "static/media/mealplan2.jpg": "/static/media/mealplan2.f01aefa186f543f6451b.jpg",
+    "static/media/social.jpg": "/static/media/social.532dd56d5af5b11dbaaa.jpg",
+    "static/media/memory2.jpg": "/static/media/memory2.76a2f24d4df3df13ea30.jpg",
+    "static/media/stephane_popov_resume.pdf": "/static/media/stephane_popov_resume.792ca94dea1e42d06a05.pdf",
+    "static/media/googleplay.png": "/static/media/googleplay.b4640a5852e5f145370e.png",
+    "static/media/email.png": "/static/media/email.56f50ae76e60202b31a6.png",
+    "static/media/linkedin.png": "/static/media/linkedin.9a1a7f8162140e296345.png",
+    "index.html": "/index.html",
+    "main.be3826d3.css.map": "/static/css/main.be3826d3.css.map",
+    "main.ad1abfe8.js.map": "/static/js/main.ad1abfe8.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be3826d3.css",
+    "static/js/main.ad1abfe8.js"
+  ]
+}
