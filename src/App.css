@@ -1,0 +1,256 @@
+.App {
+	text-align: center;
+	background-color: #000c17;
+
+	background-image: url(./icons/background3.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+
+	opacity: 1.5;
+}
+
+.layout {
+	background-color: #000c17;
+	min-height: 69vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+
+	background-image: url(./icons/background3.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+
+	opacity: 1;
+}
+
+.links {
+	display: flex;
+    flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.links img {
+	animation: growFromDot 1s ease-in-out;
+}
+
+@keyframes growFromDot {
+	0% {
+	  transform: scale(0.3);
+	}
+	100% {
+	  transform: scale(1);
+	}
+}
+  
+
+.rotation {
+	display: flex;
+	height: 6vmin;
+	margin-top: 8.5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	filter: invert(31%) sepia(7%) saturate(23%) hue-rotate(314deg) brightness(88%) contrast(89%);
+}
+.rotation:hover {
+	filter: invert(89%) sepia(4%) saturate(4%) hue-rotate(314deg) brightness(82%) contrast(89%);
+}
+
+.scroll {
+	height: 10vmin;
+	filter: invert(95%) sepia(7%) saturate(1584%) hue-rotate(160deg) brightness(97%) contrast(92%);
+	margin-left: 111rem;
+	margin-bottom: 33px;
+}
+
+#cvdownloadbutton {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.cv-download {
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.rotation:hover {
+		animation: rotation infinite 33s linear;
+	}
+	.scroll {
+		animation: rotation2 infinite 0.8s linear;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotation2 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+}
+
+.icon_link {
+	color: #7c7c7c;
+	margin: auto;
+}
+
+span {
+	position: absolute;
+	left: 50%;
+	top: 13%;
+	transform: translate(-50%, -50%);
+	display: block;
+	color: #313131;
+	font-size: 69px;
+	font-weight: bolder;
+	letter-spacing: 8px;
+	cursor: pointer;
+	white-space: nowrap;
+	animation: fadeIn 1s ease-in-out;
+}
+
+span::before {
+	content: "STEPHANE POPOV";
+	position: absolute;
+	color: transparent;
+	background-image: repeating-linear-gradient(
+		180deg,
+		transparent 0,
+		transparent 2px,
+		#4e4e4e 2px,
+		#505050 4px
+	);
+	background-clip: text;
+	top: 0px;
+	left: 0;
+	z-index: -1;
+	transition: 0.8s;
+}
+
+span::after {
+	content: "STEPHANE POPOV";
+	position: absolute;
+	color: transparent;
+	background-image: repeating-linear-gradient(
+		180deg,
+		transparent 0,
+		transparent 2px,
+		#b4b4b4 2px,
+		#cacaca 4px
+	);
+	background-clip: text;
+	top: 0px;
+	left: 0px;
+	transition: 0.8s;
+}
+
+span::before {
+	animation: hoverLoopBefore 2s linear infinite;
+}
+  
+span::after {
+	animation: hoverLoopAfter 2s linear infinite;
+}
+
+@keyframes hoverLoopBefore {
+	0%, 100% {
+	  transform: translate(0, 0);
+	}
+	50% {
+	  transform: translate(4px, 4px);
+	}
+}
+  
+@keyframes hoverLoopAfter {
+	0%, 100% {
+	  transform: translate(0, 0);
+	}
+	50% {
+	  transform: translate(-4px, -4px);
+	}
+}
+  
+
+#buttons {
+	margin-left: 20px;
+}
+
+.projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20rem;
+}
+  
+.project-card {
+	width: 20rem;
+	height: 15rem;
+	margin: 2rem;
+	background-color: #3f3f3f67;
+	border-radius: 1rem;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+
+.project-button {
+	height: 18rem;
+	width: 12rem;
+	padding: 0 20px;
+	font-size: 1.5rem;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+}
+  
+.project-button:hover::after {
+	content: '';
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(128, 128, 128, 0.068);
+	transform: rotate(45deg);
+	transition: all 0.8s ease-in-out;
+}
+
+.project-button:hover {
+	transform: scale(1.33);
+	z-index: 1;
+}
+
+.project-text {
+	font-size: 12px;
+}
+
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
