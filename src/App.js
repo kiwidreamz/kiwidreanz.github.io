@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  document.title = "Stephane Popov Portfolio";
+  document.title = "Stephane Popov's Portfolio";
 
   const [layout, setLayout] = useState(false);
   const [projectTitle, setProjectTitle] = useState("");
